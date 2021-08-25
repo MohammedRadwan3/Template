@@ -1,0 +1,764 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    font-size: 16px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    scroll-behavior: smooth;
+}
+body
+{
+    perspective: 800px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.color 
+{
+    height: 30px;
+    background: url(../images/sep.png) no-repeat;
+}
+/* sec-1 Start */
+#sec-1 {
+    
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#sec-1 nav {
+    padding: 10px 0;
+    background-color: #000000;
+    color: white;
+}
+
+#sec-1 nav .container div#flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#sec-1 nav .container div#flex div a {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 9px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: .4s background ease;
+}
+
+#sec-1 nav .container div#flex div a:hover {
+    background-color: #FFC702;
+    color: black;
+}
+
+#sec-1 nav ul {
+    display: none;
+    list-style-type: none;
+}
+
+#sec-1 #btn {
+    display: none;
+}
+
+#btn:checked+ul {
+    display: block;
+}
+
+#sec-1 nav label {
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#sec-1 nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    padding: 8px 0;
+    transition: .4s background-color ease;
+}
+#sec-1 nav a:hover {
+    background-color: #FFE270;
+    color: black;
+}
+#sec-1 header
+{
+    margin: 60px 0;
+}
+#sec-1 header h5
+{
+    text-transform: uppercase;
+}
+#sec-1 header h5 span
+{
+    text-transform: capitalize;
+}
+#sec-1 header h1
+{
+    margin: 10px 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+#sec-1 header h1:last-of-type
+{
+    color: #CD8383;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+#sec-1 header button
+{
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s background,color ease;
+}
+#sec-1 header button:hover
+{
+    background: black;
+    color: white;
+}
+#sec-1 article
+{
+    background: black;
+    padding: 50px 0;
+}
+#sec-1 article .container h1
+{
+    color: #FFC702;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+#sec-1 article .container p
+{
+    color: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+h1.center
+{
+    background: url(../images/sep.png) no-repeat;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 45px 0;
+}
+/* Sec-1 End */
+/* Sec-2 Start */
+#sec-2
+{
+    padding: 50px 0;
+}
+#sec-2 h1
+{
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+#sec-2 .container article
+{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#sec-2 article img
+{
+    width: 100%;
+    height: 50%;
+}
+#sec-2 article div:first-of-type
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+#sec-2 article:first-of-type div:first-of-type
+{
+    background: url(../images/card1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#sec-2 article:nth-of-type(2) div:first-of-type
+{
+    background: url(../images/card2.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#sec-2 article:nth-of-type(3) div:first-of-type
+{
+    background: url(../images/card3.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#sec-2 article div:first-of-type span
+{
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+#sec-2 article div:last-of-type
+{
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    color: white;
+    padding: 15px;
+}
+#sec-2 article div:last-of-type h1
+{
+    color: #FFC702;
+    margin-bottom:10px;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+#sec-2 article div:last-of-type p
+{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+/* Sec-2 End */
+/* Sec-3 Start */
+#sec-3
+{
+    padding: 80px 0;
+    background: black;
+}
+#sec-3 h1
+{
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    width: 100%;
+    color: #FFC702;
+    text-align: center;
+}
+#sec-3 .container div img
+{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 20px;
+}
+/* Sec-3 End */
+/* Sec-4 Start */
+#sec-4
+{
+    padding: 50px 0;
+    background: url(../images/sep.png) no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+#sec-4 h1
+{
+    margin: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+#sec-4 h6
+{
+    font-size: .8rem;
+    font-weight: 500;
+}
+#sec-4 button
+{
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s background,color ease;
+}
+#sec-4 button:hover
+{
+    background: black;
+    color: white;
+}
+/* Sec-4 End */
+/* Sec-5 Start */
+#sec-5
+{
+    padding: 60px 0 30px;
+    background: black;
+    color: white;
+}
+#sec-5 h1
+{
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+#sec-5 article
+{
+    margin: 40px 0;
+}
+#sec-5 article img
+{
+    width: 100%;
+}
+#sec-5 article div div
+{
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+#sec-5 article div div h1
+{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+#sec-5 article div div h5
+{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#sec-5 article div div p
+{
+    word-spacing: -1px;
+}
+/* Sec-5 End */
+/* Sec-6 Start */
+#sec-6
+{
+    padding: 50px 0;
+    background: linear-gradient(to top, rgba(35, 57, 61, 0.6), rgba(35, 57, 61, 0.6)), 
+    url(../images/contact-us.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+#sec-6 h1
+{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #FFC702;
+}
+#sec-6 p
+{
+    color: #e1e5e7;
+    text-align: justify;
+    font-weight: 500;
+}
+#sec-6 form
+{
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: 0 0 15px #FFBC00;
+    border-radius: 5px;
+    border: 1px solid #FFBC00;
+}
+#sec-6 form div input
+{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+}
+#sec-6 form #submit input
+{
+    margin-bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #FFC702;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+/* Sec-6 End */
+/* Sec-7 Start */
+#sec-7
+{
+    margin-top: 2px;
+    padding: 5px;
+    background: url(../images/sep.png) no-repeat;
+}
+/* Sec-7 End */
+/* Footer Start */
+#footer
+{
+    padding: 50px 0;
+    background: black;
+    text-align: center;
+    color: white;
+}
+#footer .container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer .container div
+{
+    margin: 30px 0;
+    text-align: justify;
+    width: 50%;
+}
+#footer .container div h5
+{
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 1rem;
+}
+#footer .container div:nth-of-type(2) h5 i
+{
+    padding-right: 10px;
+}
+#footer .container div:last-of-type
+{
+    width: 100%;
+}
+#footer .container div:last-of-type i
+{
+    padding: 0 5px;
+    font-size: 2rem;
+    color: yellow;
+}
+#footer form input
+{
+    margin: 20px 0;
+    background-color: transparent;
+    padding: 10px 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+#footer button
+{
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s background,color ease;
+}
+#footer button:hover
+{
+    background: #FFBC00;
+    color: white;
+}
+/* Footer End */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        width: 530px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    /* Sec-1 Start */
+    #sec-1 nav .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #sec-1 nav {
+        padding: 0;
+    }
+
+    #sec-1 nav label {
+        display: none;
+    }
+    
+
+    #sec-1 nav ul {
+        display: flex;
+        margin-right: 15px;
+    }
+
+    #sec-1 nav .container div#flex div {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #sec-1 nav ul li a {
+        padding: 10px 20px;
+    }
+
+    #sec-1 nav .container div#flex {
+        margin-bottom: 0;
+    }
+
+    #sec-1 header
+    {
+        margin: 210px 0;
+    }
+    #sec-1 article .container h1
+    {
+        font-size: 2rem;
+    }
+    h1.center
+    {
+        font-size: 2.2rem;
+    }
+    /* Sec-1 End */
+    /* Sec-2 Start */
+    #sec-2 .container div
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #sec-2 article div:last-of-type h1
+    {
+        margin-bottom:0px;
+    }
+    #sec-2 .container article
+    {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    /* Sec-2 End */
+    /* Sec-3 Start */
+    #sec-3 .container div
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-3 .container div img
+    {
+        width: 48%;
+    }
+    /* Sec-3 End */
+    /* Sec-4 Start */
+    #sec-4 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 640px;
+    }
+    #sec-4 h1
+    {
+        margin: 15px 0 0;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    #sec-4 h6
+    {
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    /* Sec-4 End */
+    /* Sec-5 Start */
+    #sec-5 article img
+    {
+        height: 350px;
+    }
+    #sec-5 article #flex div
+    {
+        margin: 15px 0;
+        width: 49%;
+    }
+    #sec-5 article #flex
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /* Sec-5 End */
+    /* Sec-6 Start */
+    #sec-6 .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-6 #text 
+    {
+        width: 50%;
+    }
+    #sec-6 form
+    {
+        width: 45%;
+        margin-top: 0;
+    }
+    /* Sec-6 End */
+    /* Footer Start */
+    #footer .container div
+    {
+        width: 30%;
+    }
+    #footer .container div:last-of-type
+    {
+        width: 35%;
+    }
+    #footer .container div:last-of-type i
+    {
+        padding: 0 5px;
+        font-size: 2rem;
+        color: #FFBC00;
+    }
+    /* Footer End */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 920px;
+    }
+    #sec-1 header h5
+    {
+        font-size: 1rem;
+    }
+    #sec-1 header h1
+    {
+        font-size: 3.2rem;
+    }
+    #sec-1 header button
+    {
+        padding: 15px 30px;
+        border-radius: 30px;
+        margin-top: 8px;
+        font-size: 1rem;
+    }
+    /* Sec-2 Start */
+    #sec-2 .container div
+    {
+        justify-content: space-between;
+    }
+    #sec-2 .container article
+    {
+        width: 31%;
+        margin-bottom: 0px;
+    }
+    /* Sec-2 End */
+     /* Sec-3 Start */
+    #sec-3 .container div img
+    {
+        width: 24%;
+    }
+     /* Sec-3 End */
+     /* Sec-4 Start */
+    #sec-4 .container
+    {
+        width: 860px;
+    }
+    /* Sec-4 End */
+    /* Sec-5 Start */
+    #sec-5 article
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec-5 article img
+    {
+        width: 48%;
+        height: 400px;
+    }
+    #sec-5 article #flex
+    {
+        width: 49%;
+    }
+    #sec-5 article #flex div
+    {
+        margin:0 0 15px;
+        width: 47%;
+        text-align: left;
+    }
+    #sec-5 article #flex
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /* Sec-5 End */
+    /* Sec-6 Start */
+    #sec-6 #text 
+    {
+        width: 56%;
+    }
+    #sec-6 form
+    {
+        width: 36%;
+    }
+    /* Sec-6 End */
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1130px;
+    }
+    #sec-1 nav .container div#flex div {
+        margin-right: -20px;
+    }
+    /* Sec-2 Start */
+    #sec-2 .container article
+    {
+        height: 550px;
+        width: 30%;
+    }
+    /* Sec-2 End */    
+    /* Sec-4 Start */
+    #sec-4 .container
+    {
+        width: 960px;
+    }
+    /* Sec-4 End */
+    /* Sec-5 Start */
+    #sec-5 article
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec-5 article img
+    {
+        width: 48%;
+        height: 400px;
+    }
+    #sec-5 article #flex
+    {
+        width: 45%;
+    }
+    #sec-5 article #flex div
+    {
+        margin:0 0 15px;
+        width: 47%;
+        text-align: left;
+    }
+    #sec-5 article #flex
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    /* Sec-5 End */
+    /* Sec-6 Start */
+    #sec-6 #text 
+    {
+        width: 60%;
+    }
+    #sec-6 form
+    {
+        width: 33%;
+    }
+    /* Sec-6 End */
+}
